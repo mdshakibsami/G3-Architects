@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.work-sans-default {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Shared Design */
+.display-flex {
+  display: flex;
+}
+.dark-2 {
+  color: #424242;
+}
+.btn-primary {
+  background-color: #ff900e;
+  color: white;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+main > section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #131313;
+  font-weight: 800;
+  font-size: 2.8rem;
+}
+.sub-title {
+}
+.dec {
+  color: #727272;
+  font-weight: 1rem;
+}
+.img-100{
+  width: 100%;
+}
+
+/* Header Navbar Design */
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.brand {
+  font-weight: 800;
+  font-size: 3rem;
+}
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.link-container {
+  gap: 30px;
+}
+ul > li {
+  list-style: none;
+}
+li > a {
+  text-decoration: none;
+  color: #424242;
+}
+
+/* Banner Related Styles */
+.banner-content {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-image {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.banner-title {
+  color: #131313;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+/* Feature Section */
+.feature {
+  margin-top: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.feature-content {
+  max-width: 550px;
+}
+#quick-list{
+  color: #727272;
+}
+#features{
+  color: #FF900E;
+}
+
+
+/* love and Joy */
+.love-enjoy{
+  margin: 100px auto;
+  gap: 100px;
+}
+.love-joy-content{
+  max-width: 590px;
+}
+#love-joy-border{
+  border-left: 5px solid #FF900E;
+  padding: 20px;
+}
+.love-joy-card{
+  margin-bottom: 20px;
+  padding: 20px 40px;
+  box-shadow: 0px 4px 30px 0 rgba(207, 17, 17, 0.06);
+  border-radius: 8px;
+}
+#ten-yr{
+  font-weight: bold;
+  font-size: 4rem;
+}
+#badge-btn{
+  margin-top: -40px;
+  margin-left: -80px;
+  padding: 40px 45px;
+}
+
+
+/* Facts section */
+.facts{
+  flex-direction: column;
+  margin: 100px auto;
+}
+.fact-card-container{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.facts-cotent{
+  max-width: 600px;
+}
+.fact-card{
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+  width: 230px;
+  height: 230px ;
+  justify-content: center;
+  text-align: center;
+  padding: 35px 40px;
+  margin: 0 auto;
+}
+
+
+.fact-number{
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin: 10px auto;
+
+}
+.fact-text{
+  margin: 5px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Our Sponsors */
+.sponsor-content{
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align-last: center;
+}
+.company-img-container{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.company-img{
+  margin: 0 auto;
+  padding: 20px;
+  filter: grayscale(100%);
+}
+/* Footer */
+footer{
+  background-color: #FFF4E7;
+  padding: 30px 0px;
+  max-width: 1440px;
+  margin: 30px auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Media Query */
+@media screen and (max-width: 576px) {
+  .navbar ,.love-enjoy{
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+  }
+  .feature {
+    flex-direction: column;
+  }
+  .fact-card-container,
+  .company-img-container{
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .love-enjoy img{
+    width: 100%;
+  }
+  #badge-btn{
+    margin: 10px 40px;
+    padding: 10px 15px;
+  }
+  
+
+}
+
+
+
+/* Medium Devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+  .feature ,.love-enjoy{
+    flex-direction: column;
+  }
+  .fact-card-container,.company-img-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    
+  }
+  .love-enjoy img{
+    width: 100%;
+  }
+  #badge-btn{
+    margin: 10px 40px;
+    padding: 10px 15px;
+  }
+  
+}
